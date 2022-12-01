@@ -4,6 +4,8 @@ call plug#begin()
     Plug 'sheerun/vim-polyglot'
     Plug 'Th3Whit3Wolf/one-nvim'
     Plug 'morhetz/gruvbox'
+    Plug 'bluz71/vim-nightfly-colors'
+    Plug 'Th3Whit3Wolf/one-nvim'
 call plug#end()
 
 syntax enable
@@ -11,9 +13,12 @@ set number
 set nocompatible
 set hlsearch
 set background=dark
-let g:solarized_termcolors=256
-colorscheme gruvbox
-
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+" let g:solarized_termcolors=256
+" Vimscript initialization file
+colorscheme nightfly
 " Impostare distanza del Tab
 set tabstop=4
 set softtabstop=4
@@ -34,6 +39,17 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") 
       \ && b:NERDTree.isTabTree()) | q | endif
+
+" Chiudere automaticamente parentesi
+
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 
 
 " Impostazioni di Coc
