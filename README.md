@@ -1,3 +1,5 @@
+#How to use my configuration files
+
 If you want use all configuration to set-up:
 - CoC
 - Nvim
