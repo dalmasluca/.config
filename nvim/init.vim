@@ -20,7 +20,7 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " let g:solarized_termcolors=256
 " Vimscript initialization file
-colorscheme dracula
+colorscheme nightfly
 " Impostare distanza del Tab
 set tabstop=4
 set softtabstop=4
@@ -38,7 +38,9 @@ set spell
 
 " Setting indentLine
 let g:indentLine_char = '│'
-let g:indentLine_color_term = 12
+let g:indentLine_color_term = 239
+let g:indentLine_color_tty_light = 14
+let g:indentLine_color_dark = 1
 
 " Impostare NERDTRee command
 autocmd VimEnter * NERDTree
