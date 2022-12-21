@@ -8,6 +8,8 @@ call plug#begin()
     Plug 'Th3Whit3Wolf/one-nvim'
     Plug 'Yggdroot/indentLine'
     Plug 'dracula/vim',{'as':'dracula'}
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 syntax enable
