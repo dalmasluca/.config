@@ -23,6 +23,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " let g:solarized_termcolors=256
 " Vimscript initialization file
 colorscheme nightfly
+set fillchars=horiz:━,horizup:┻,horizdown:┳,vert:┃,vertleft:┨,vertright:┣,verthoriz:╋
 " Impostare distanza del Tab
 set tabstop=4
 set softtabstop=4
@@ -40,7 +41,7 @@ set spell
 " Setting vim-go
 let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
-
+let g:go_highlight_types = 1 
 
 " Setting indentLine
 let g:indentLine_char = '│'
