@@ -42,6 +42,7 @@ set spell
 let g:go_highlight_operators = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_types = 1 
+let g:go_highlight_function_calls = 1
 
 " Setting indentLine
 let g:indentLine_char = '│'
