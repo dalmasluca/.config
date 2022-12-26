@@ -37,6 +37,10 @@ set signcolumn=yes
 set nobackup
 set nowritebackup
 set spell
+" Setting vim-go
+let g:go_highlight_operators = 1
+let g:go_highlight_functions = 1
+
 
 " Setting indentLine
 let g:indentLine_char = '│'
