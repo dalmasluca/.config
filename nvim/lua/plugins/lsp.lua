@@ -156,18 +156,13 @@ return { -- LSP Configuration & Plugins
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			clangd = {},
-			gopls = {
-				cmd = { "gopls" },
-				filetype = { "go", "gomod", "gowork", "gotmpl" },
-				root_dir = require("lspconfig/util").root_pattern("go.work", "go.mod", ".git"),
-				single_file_support = true,
-			},
+			--gopls = {
+			--cmd = { "gopls" },
+			--filetype = { "go", "gomod", "gowork", "gotmpl" },
+			--root_dir = require("lspconfig/util").root_pattern("go.work", "go.mod", ".git"),
+			--single_file_support = true,
+			--},
 			-- pyright = {},
-			-- rust_analyzer = {},
-			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
-			--
-			-- Some languages (like typescript) have entire language plugins that can be useful:
-			--    https://github.com/pmizio/typescript-tools.nvim
 			--
 			-- But for many setups, the LSP (`tsserver`) will work just fine
 			-- tsserver = {},
